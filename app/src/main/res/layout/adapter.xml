@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/adapter"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="64dp">
+    <TextView
+        android:id="@+id/txtid"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:text="id"
+        />
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:padding="10dp"
+        android:text="sample"/>
+    <TextView
+        android:id="@+id/txtMobile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:padding="10dp"
+        android:text="sample"/>
+    <TextView
+        android:id="@+id/txtModel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:padding="10dp"
+        android:text="sample"/>
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:inputType="text"
+            android:maxLength="24"
+            android:hint="Enter Name"
+            />
+        <EditText
+            android:id="@+id/mobile_number"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:hint="Enter Mobile Number"
+            />
+        <Spinner
+            android:id="@+id/mobile_company"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            />
+        <Button
+            android:id="@+id/add"
+            android:layout_width="96dp"
+            android:layout_height="48dp"
+            android:text="Add"
+            android:background="@color/colorAccent"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="120dp"
+            android:fillViewport="true">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/display"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </androidx.core.widget.NestedScrollView>
+
+        <Button
+            android:id="@+id/remove"
+            android:visibility="invisible"
+            android:layout_width="96dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="-80dp"
+            android:text="Remove"
+            android:background="@color/colorAccent"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            />
+
+    </LinearLayout>
+</ScrollView>
