@@ -12,7 +12,6 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -128,14 +127,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(RemovalList.size()==0){
+
                     Toast.makeText(MainActivity.this, "Please select atleast 1 item to delete",Toast.LENGTH_SHORT).show();
+
                 } else {
 
                     data.removeAll(RemovalList);
                     if(data.size()==0){
                         Remove.setVisibility(View.INVISIBLE);
                     }
-                    RemovalList = new ArrayList<>();
+                    RemovalList.clear();
                     Display.setAdapter(adapter);
                     for(int i = 0; i<data.size(); i++)
                         Log.d("data", String.valueOf(data.get(i).getId()));
