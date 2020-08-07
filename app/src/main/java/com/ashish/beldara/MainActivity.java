@@ -110,6 +110,8 @@ public class MainActivity extends AppCompatActivity {
                         if(isChecked){
                             RemovalList.add(currentData);
                             Log.d("removeid", "Added "+currentData.getId());
+                        } else {
+                            RemovalList.remove(currentData);
                         }
                     }
                 });
